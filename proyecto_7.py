@@ -120,8 +120,8 @@ Características urbanísticas: La distribución de viviendas, oficinas y espaci
 """
 
 # Filtrar los días lluviosos y no lluviosos
-rainy_saturdays = saturdays[saturdays['weather_conditions'].str.contains('Rain')]
-non_rainy_saturdays = saturdays[~saturdays['weather_conditions'].str.contains('Rain')]
+rainy_saturdays = saturdays[saturdays['weather_conditions'].str.contains('Bad')]
+non_rainy_saturdays = saturdays[saturdays['weather_conditions'].str.contains('Good')]
 
 # Duraciones de viajes en segundos
 rainy_durations = rainy_saturdays['duration_seconds']
