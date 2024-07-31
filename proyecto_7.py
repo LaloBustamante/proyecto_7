@@ -8,9 +8,9 @@ plt.switch_backend('TkAgg')
 
 #Importar archivos CSV 
 # Importar los datasets
-df_companies = pd.read_csv('project_sql_result_01.csv')
-df_neighborhoods = pd.read_csv('project_sql_result_04.csv')
-df_weather = pd.read_csv('project_sql_result_07.csv')
+df_companies = pd.read_csv('datasets/project_sql_result_01.csv')
+df_neighborhoods = pd.read_csv('datasets/project_sql_result_04.csv')
+df_weather = pd.read_csv('datasets/project_sql_result_07.csv')
 
 # Mostrar las primeras filas de los datasets
 print(df_companies.head())
